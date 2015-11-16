@@ -81,7 +81,7 @@ a:active {
 
 .container{
 	margin: 0 auto;
-	width: 1300px; /* is there a better way to handle this width so it doesnt result in scrolling on smaller laptops*/
+	width: 1200px; /* is there a better way to handle this width so it doesnt result in scrolling on smaller laptops*/
 }
 
 
