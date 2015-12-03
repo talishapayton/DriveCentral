@@ -1,26 +1,59 @@
 body{
 	margin: 0;
 	width: 100%;
-	font-family: Garamond, serif;
+	font-family: Verdana, sans-serif;
+	color: #1c4c52;
+}
+
+
+
+
+.container{
+	margin: 0 auto;
+	max-width: 1200px; /* is there a better way to handle this width so it doesnt result in scrolling on smaller laptops*/
+}
+
+.flex{
+	display: flex;
+}
+
+.space-between{
+	justify-content: space-between;
 }
 
 header{
 	margin: 0;
-	height: 125px;
-	/*background-color: red;*/
 	color: #000000;
-	margin-bottom: 100px;
-	
+}
+h1{
+	margin:0;
+	padding:0;
+	font-family: garamond, serif;
+	font-size: 36px;
 }
 
+h2{
+	margin:0;
+	padding:0;
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+}
 
+h3{
+	font-family: garamond, serif;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
 
 #logo{
 	/*background-color: yellow;*/
 	float: left;
 	clear: both; /* is there a better way to clear without having to have it twice*/
 	margin-top: 10px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	margin-left:10px;	
 }
 
 #phonelocation{
@@ -29,10 +62,21 @@ header{
 	/*background-color: purple;*/
 	font-family: verdana, sans-serif;
 	text-align: right;
+	line-height: 1.3;
+	margin-right:10px;
 }
 
 a{
 	text-decoration: none;
+}
+
+
+/*NAVIGATION STYLES---------- NAVIGATION STYLES ----------- NAVIGATION STYLES */
+
+#navcontainer{
+	/*background-color: orange;*/
+	width: 575px;
+	float: right;
 }
 
 nav{
@@ -45,6 +89,30 @@ nav{
 	/*Why wont my margins work here? I had to put it on the logo instead*/
 }
 
+nav ul{
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 555px;
+	float: right;
+	margin-bottom:20px;
+}
+
+nav ul li{
+	/*background-color: green;*/
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+
+nav ul li a {
+	display: block;
+	margin-right: 25px;
+	margin-top: 3px;
+	margin-bottom:5px;
+}
+
 nav a:link {
     color: #ffffff;
 }
@@ -54,90 +122,103 @@ nav a:visited {
     color: #ffffff;
 }
 
-a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-a:active {
+nav a:active {
     text-decoration: underline;
 }
 
-#navcontainer{
-	/*background-color: orange;*/
-	width: 550px;
-	height: 30px;
-	float: right;
-	margin-top: 3px;
-}
 
-.flex{
-	display: flex;
-}
+nav ul li ul.dropdown{ 
 
-.space-between{
-	justify-content: space-between;
-}
-
-
-.container{
-	margin: 0 auto;
-	width: 1200px; /* is there a better way to handle this width so it doesnt result in scrolling on smaller laptops*/
-}
-
-
-
-footer{
-	background-color: gray;
-	color: #ffffff;
-	font-family: verdana, sans-serif;
-}
-
-.footersection{
-	/*background-color: purple;*/
-	width: 400px;
-	height: 150px;
-}
-
-.button{
-	margin: 0 auto;
-	margin-top: 40px;
-	padding: 20px 20px;
-	width: 200px;
-	background-color: lightgray;
-	text-align: center;
-	font-weight: bold;
-	border-radius: 8px;
+	min-width: 125px; /* Set width of dropdown */
+	width: 135px;/* how to make this responsive*/
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 0;
 	box-shadow: 2px 2px 2px #000000;
 
 }
 
-#footernumber{
-	margin: 0 auto;
-	margin-top: 65px;
-	width: 150px;
+nav ul li:hover ul.dropdown{ 
+	display: block; /* display the dropdown*/
 }
 
-ul{
+nav ul li ul.dropdown li{
+	background-color: #1C4C52;
+	display: block;
+	margin-top: 0px;
+	height:20px;
+	padding:10px;
+	width: 115px;
+	border-top:2px solid white;
+}
+
+
+.selected{
+	/*background-color: red;*/
+}
+
+/*END OF NAVIGATION STYLES---------- END OF NAVIGATION STYLES ----------- END OF NAVIGATION STYLES */
+
+/* HERO STYLES*/
+
+.hero{
 	margin: 0 auto;
-	margin-top: 20px;
 	padding: 0;
-	width: 150px;
-	list-style: none;
+	background-image: url("../images/Woman Learning to Drive.png");
+	/*background-size: play with this! */
+	height: 507px;
+	position: relative;
+}
+
+.herocallout{
+	background-color: #1c4c52;
+	color: #ffffff;
+	max-width: 340px;
+	height: 415px;
+	float: right;
+	border-radius: 8px;
+	font-family: verdana;
+	line-height: 1.4;
+	position:absolute;
+	right: 50px;
+	top: 50px;
+}
+
+.herocallout p {
+	float:left;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-bottom: 0;
+	/*background-color: black;*/
+	
+}
+
+.herocallout img{
+	float: right;
+	padding: 10px;
 	/*background-color: green;*/
 }
 
-ul li{
-	margin-bottom: 5px;
+.clear {
+clear:both;
 }
 
-footer a:link {
-    color: #ffffff;
-}
-
-
-footer a:visited {
-    
-    color: #ffffff;
+.button {
+	margin: 0px auto;
+	padding: 20px;
+	width: 200px;
+	background-color: lightgray;
+	text-align: center;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px #000000;
 }
 
 .button a:link{
@@ -146,4 +227,104 @@ footer a:visited {
 
 .button a:visited{
 	color: #1C4C52;
+}
+
+.button a:hover{
+	color: #ffffff;
+}
+
+/* END of HERO STYLES*/
+
+/* ARTICLE STYLES*/
+.columns{
+	margin: 10px auto;
+	/*background-color: lightblue;*/
+	max-width: 1180px;
+}
+
+.column{
+	width: 33%;
+	padding-top: 10px;
+	line-height: 1.4;
+	/*background-color: pink;*/
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.column img{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+}
+
+
+
+
+
+/* ARTICLE STYLES*/
+article p img{
+	float: left;
+}
+
+
+
+/*FOOTER STYLES */
+
+footer{
+	margin:0;
+	padding:0;
+	background-color: gray;
+	color: #ffffff;
+	font-family: verdana, sans-serif;
+	clear: both;
+	bottom: 0;
+}
+
+footer .button{
+	margin: 0;
+	margin-top: 20px;
+
+}
+
+footer ul{
+	list-style: none;
+	/*background-color: green;*/
+	padding: 0;
+}
+
+footer .nav a:link {
+	color: #ffffff;
+}
+
+footer .nav a:visited{
+	color: #ffffff;
+}
+
+footer .nav a:hover{
+	color: #1C4C52;
+}
+/*END OF FOOTER STYLES */
+
+/*DRIVING LESSONS*/
+
+#lessons{
+	max-width: 700px;
+	margin-top: 30px;
+	background-color: red;
+	float: left;
+	/*position: relative;
+}
+
+.calloutposition{
+		background-color: blue;
+		color: #ffffff;
+		max-width: 340px;
+		height: 415px;
+		float: right;
+		border-radius: 8px;
+		font-family: verdana;
+		line-height: 1.4;
+		position:absolute;
+		right: 0px;
+		top: 100px;
 }

@@ -5,7 +5,6 @@
 	</head>
 	<body>
 		<header>
-
 			<div class="container">
 				<img id ="logo" src="images/drivecentrallogo.png" alt="DriveCentral Logo">
 				<section id="phonelocation">
@@ -14,36 +13,70 @@
 				</section>
 			</div>
 
-			<!--There has to be a better way to do these containers -->
 			<nav>
 				<div class="container" >
-					<div id="navcontainer" class = "flex space-between"  >
-						<a href="#" >Home</a>
-						<a href="#" >Driving Lessons</a>
-						<a href="#" >Reviews</a>
-						<a href="#" >Pricing</a>
-						<a href="#" >Video Lessons</a>
+					<div id="navcontainer">
+						<ul>
+							<li class="selected"><a href="index.html">Home</a></li>
+							<li>
+								<a href="drivingLessons.html">Driving Lessons</a>
+								<ul class="dropdown">
+									<li><a href ="adults.html">Adults</a></li>
+									<li><a href ="teens.html">Teens</a></li>
+								</ul>
+							</li>
+							<li><a href="reviews.html">Reviews</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="videoLessons.html">Video Lessons</a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>	
-
 		</header>
 
+		<div class="hero container">
+
+			<!--<img width="1200" height="506" src="images/Woman Learning to Drive.png" alt="Woman Learning to Drive"> <!--remove space from filename!!!!! will break in browsers -->
+			<div class="herocallout calloutposition">
+				<p>Welcome to the DriveCentral website. My name is Aaron and I am the owner and driving instructor
+				of the company. Our mission at DriveCentral is to provide professional and  comfortable instruction that turns inexperienced drivers into safe, collision-free and confident drivers. <img height="100px" src="images/Casual Man.png" alt="Driving Instructor Portrait" align="right"> Feel free to call if you have any questions or schedule a lesson online.</p>
+				<div class="clear"></div>
+				<div class="button"><a href="https://www.bookfresh.com/index.html?id=15b22b9d3a0108159f1da64b745c4dbb&view=buyer_flow" >SCHEDULE A LESSON</a></div>
+			</div>
+		</div>
+
+		<div class = "columns container space-between flex">
+			<article class="column">
+				<h3>About the Instructor</h3>
+				<p><img width="55" height="39" src=" images/icon1.png" alt="icon1">Aaron  worked as a License Test Examiner at PENN DOT Driver License Centers for 5 years. He is aware of all license test exam procedures and how they score each license exam of the participants drivers test. As a result, over 96% of our students get their license on the first try!</p>
+			</article>
+
+			<article class="column">
+				<h3>Car Safety Features</h3>
+				<p><img width="55" height="39" src=" images/icon2.png" alt="icon2">DriveCentral utlizes a Honda Civic model which is know for its reliability and safety features. Aaron has outfitted the car with a second set of brakes on the passenger side as well as an additional rearview mirror. This allows Aaron to see hazards and prevent accidents before a student can even react.</p>
+			</article>
+
+			<article class="column">
+				<h3>How I Teach</h3>
+				<p><img width="55" height="39" src=" images/icon3.png" alt="icon3">Combining expert instruction through lessons, guides and interactive videos with behind the wheel instruction helps students understand good driving practices before hitting the road. Practicing driving maneauvers at the actual test location allows students a better chance of passing their test the first time.</p>
+			</article>
+		</div>
+
 		<footer>
-			<div class="container flex space-between">
-				<section class="footersection">
-					<p class="button"><a href="#" >SCHEDULE A LESSON</a></p>
+			<div class="columns container space-between flex">
+				<section class="column">
+					<p class="button"><a href="https://www.bookfresh.com/index.html?id=15b22b9d3a0108159f1da64b745c4dbb&view=buyer_flow" >SCHEDULE A LESSON</a></p>
 				</section>
-				<section class="footersection">
+				<section class="column">
 					<p id="footernumber">267-789-4561</p> 
 				</section>
-				<section class="footersection">
-					<ul>
-						<li><a href="#" >Home</a></li>
-						<li><a href="#" >Driving Lessons</a></li>
-						<li><a href="#" >Reviews</a></li>
-						<li><a href="#" >Pricing</a></li>
-						<li><a href="#" >Video Lessons</a></li>
+				<section class="column">
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="drivingLessons.html">Driving Lessons</a></li>
+						<li><a href="reviews.html">Reviews</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="videoLessons.html">Video Lessons</a></li>
 					</ul>						
 				</section>
 			</div>
