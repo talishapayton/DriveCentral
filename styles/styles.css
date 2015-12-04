@@ -5,7 +5,9 @@ body{
 	color: #1c4c52;
 }
 
-
+p{
+	line-height: 1.4;
+}
 
 
 .container{
@@ -258,9 +260,6 @@ clear:both;
 }
 
 
-
-
-
 /* ARTICLE STYLES*/
 article p img{
 	float: left;
@@ -307,24 +306,30 @@ footer .nav a:hover{
 
 /*DRIVING LESSONS*/
 
-#lessons{
+#lessonsContent{
 	max-width: 700px;
-	margin-top: 30px;
-	background-color: red;
+	/*background-color: green;*/
 	float: left;
-	/*position: relative;
+	margin-top: 30px;
 }
 
-.calloutposition{
-		background-color: blue;
-		color: #ffffff;
-		max-width: 340px;
-		height: 415px;
-		float: right;
-		border-radius: 8px;
-		font-family: verdana;
-		line-height: 1.4;
-		position:absolute;
-		right: 0px;
-		top: 100px;
+#lessonsContent p{
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+#lessonsContainer{
+		/*background-color: red;
+		max-height: 900px;*/
+}
+
+#lessonsCallout{
+		position:static;
+		max-height: 340px;
+		margin-top: 30px;
+		margin-right: 50px;
+}
+
+#lessonsCallout a:link{
+	text-decoration: underline;
+	color: #ffffff;
 }
