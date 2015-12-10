@@ -1,0 +1,13 @@
+figure{
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	height: 150px;
+	background-color: red;
+	float: left;
+	margin-bottom: 10px;
+}
+
+figcaption{
+	background-color: blue;
+}
